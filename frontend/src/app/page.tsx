@@ -105,12 +105,11 @@ export default function Home() {
                 className="bg-card p-8 rounded-lg shadow-lg"
               >
                 <h3 className="text-2xl font-newKansasMedium text-foreground mb-4">
-                  Find Your People
+                  Decentralized Trust
                 </h3>
                 <p className="text-muted-foreground">
-                  Connect with like-minded individuals who share your interests,
-                  hobbies and passions. Our matching algorithm helps you find
-                  your perfect friend match.
+                Community-driven security through user reporting system. Flag problematic 
+                contracts and contribute to a more resilient blockchain environment.
                 </p>
               </motion.div>
 
@@ -122,11 +121,11 @@ export default function Home() {
                 className="bg-card p-8 rounded-lg shadow-lg md:row-span-2"
               >
                 <h3 className="text-2xl font-newKansasMedium text-foreground mb-4">
-                  Safe & Secure
+                Smart Contract Safety
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Your safety is our top priority. All users are verified and
-                  our platform includes robust reporting and blocking features.
+                Comprehensive risk assessment using CVE scoring system. Make informed 
+                decisions before executing smart contracts.
                 </p>
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-3">
@@ -178,11 +177,11 @@ export default function Home() {
                 className="bg-card p-8 rounded-lg shadow-lg"
               >
                 <h3 className="text-2xl font-newKansasMedium text-foreground mb-4">
-                  Group Activities
+                Easy Integration
                 </h3>
                 <p className="text-muted-foreground">
-                  Join virtual and local meetups, game nights, book clubs and
-                  more. Making friends is more fun in groups!
+                Seamlessly integrate security features into existing smart contracts 
+                without extensive system changes.
                 </p>
               </motion.div>
 
@@ -194,11 +193,11 @@ export default function Home() {
                 className="bg-card p-8 rounded-lg shadow-lg"
               >
                 <h3 className="text-2xl font-newKansasMedium text-foreground mb-4">
-                  Chat & Connect
+                Monetization
                 </h3>
                 <p className="text-muted-foreground">
-                  Start conversations through text, voice, or video chat.
-                  Express yourself with GIFs, stickers and emoji reactions.
+                Earn through our certification system. Conduct audits and receive 
+                rewards for maintaining high coding standards.
                 </p>
               </motion.div>
 
@@ -210,11 +209,11 @@ export default function Home() {
                 className="bg-card p-8 rounded-lg shadow-lg"
               >
                 <h3 className="text-2xl font-newKansasMedium text-foreground mb-4">
-                  Interest Matching
+                Flexible Trust Model
                 </h3>
                 <p className="text-muted-foreground">
-                  From gaming to gardening, find friends who love what you love.
-                  Connect through shared interests and activities.
+                Choose between decentralized community feedback and central authority 
+                ratings for maximum flexibility.
                 </p>
               </motion.div>
             </div>
@@ -222,7 +221,7 @@ export default function Home() {
           <footer className="w-full bg-black">
             <div className="container mx-auto px-4 py-8">
               <p className="text-muted-foreground">
-                &copy; {new Date().getFullYear()} Dot Buddies. All rights
+                &copy; {new Date().getFullYear()} BNB SAFEGUARD. All rights
                 reserved.
               </p>
             </div>
