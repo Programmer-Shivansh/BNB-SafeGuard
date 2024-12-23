@@ -20,7 +20,7 @@ export function TrustInput({ onSubmit }: TrustInputProps) {
   return (
     <form onSubmit={handleSubmit} className="flex items-center gap-4">
       <p className="text-2xl sm:text-3xl text-foreground font-newKansasLight">
-        Can I trust your{" "}
+        Can I trust {" "} 
         <input
           type="text"
           value={value}
@@ -28,6 +28,7 @@ export function TrustInput({ onSubmit }: TrustInputProps) {
           className="w-32 sm:w-40 bg-transparent border-b-2 border-primary focus:border-primary/50 outline-none px-2 font-newKansasExtraSwashLightItalic"
           placeholder=""
         />
+        ?
       </p>
       <RainbowButton type="submit" className="!px-4">
         <svg
