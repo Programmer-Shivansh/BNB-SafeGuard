@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { useRouter } from "next/navigation";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { TrustInput } from "@/components/ui/trust-input";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -48,6 +49,26 @@ export default function Home() {
     }
   }, [isLoaded]);
 
+  const handleTrustSubmit = async (value: string) => {
+    try {
+      // Replace with your actual API endpoint
+      const response = await fetch('/api/trust', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ value }),
+      });
+      
+      if (!response.ok) throw new Error('Failed to submit');
+      
+      // Handle successful submission
+      console.log('Successfully submitted:', value);
+    } catch (error) {
+      console.error('Error submitting:', error);
+    }
+  };
+
   return (
     <ScrollArea className="h-screen">
       <div className="loader absolute top-0 left-0 w-full h-full bg-background z-20 flex items-center justify-center">
@@ -67,11 +88,9 @@ export default function Home() {
         </header>
         <div className="absolute flex flex-col items-center justify-center gap-8 z-10 bottom-24">
           <h1 className="hero-title mb-24 relative text-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight px-4 font-displayRegular text-foreground">
-            DOTBuddies
+            BNB SAFEGUARD
           </h1>
-          <RainbowButton onClick={() => router.push("/login")}>
-            Let&#39;s connect with friends
-          </RainbowButton>
+          <TrustInput onSubmit={handleTrustSubmit} />
         </div>
       </main>
       {isLoaded && (
